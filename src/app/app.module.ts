@@ -10,6 +10,11 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
+
+// IMPORTAR RUTAS
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +28,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    RouterModule.forRoot( ROUTES, { useHash:  true} )
+
   ],
   providers: [],
   bootstrap: [AppComponent]
