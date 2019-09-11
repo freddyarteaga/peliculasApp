@@ -7,5 +7,58 @@
   </p>
 </div>
 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">PeliculasApp </h1>
+    <p class="lead">Esta es una aplicacion de peliculas</p>
+  </div>
+</div>
+
+<div class="container">
+  <br>
+  <h1>Cartelera</h1>
+  <hr>
+  <div class="row">
+
+    <div class="col-sm-6">
+
+      <div class="row">
+        <div class="col-md-12 div-pic-1"
+            [ngStyle]="{ 'background-image': 'url( https://image.tmdb.org/t/p/w500/pxw6j2AwlUsw5iS4fCxPoCP0jPh.jpg )' }">
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 div-pic-2 "
+          [ngStyle]="{ 'background-image': 'url( https://image.tmdb.org/t/p/w500/pxw6j2AwlUsw5iS4fCxPoCP0jPh.jpg )' }">    
+          </div>
+          <div class="col-sm-6 div-pic-2 "
+          [ngStyle]="{ 'background-image': 'url( https://image.tmdb.org/t/p/w500/pxw6j2AwlUsw5iS4fCxPoCP0jPh.jpg )' }">    
+          </div>
+      </div>
+
+    </div>
+    <div class="col-sm-6">
+
+        <div class="row">
+          <div class="col-sm-6 div-pic-2 "
+          [ngStyle]="{ 'background-image': 'url( https://image.tmdb.org/t/p/w500/pxw6j2AwlUsw5iS4fCxPoCP0jPh.jpg )' }">    
+          </div>
+          <div class="col-sm-6 div-pic-2 "
+          [ngStyle]="{ 'background-image': 'url( https://image.tmdb.org/t/p/w500/pxw6j2AwlUsw5iS4fCxPoCP0jPh.jpg )' }">    
+          </div>
+          
+        </div>
+  
+        <div class="row">
+            <div class="col-md-12 div-pic-1"
+              [ngStyle]="{ 'background-image': 'url( https://image.tmdb.org/t/p/w500/pxw6j2AwlUsw5iS4fCxPoCP0jPh.jpg )' }">
+          </div>
+        </div>
+  
+      </div>
+  </div>
+</div>
+
 
 <app-tarjetas [items]='peliculasPopulares'></app-tarjetas>

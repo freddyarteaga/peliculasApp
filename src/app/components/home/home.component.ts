@@ -18,7 +18,7 @@ export class HomeComponent {
 
   // paises: any[] = [];
 
-  constructor( private peliculas: PeliculasService ) { 
+  constructor( public peliculas: PeliculasService ) { 
 
     this.loading = true;
     this.peliculas.getPopulares()
