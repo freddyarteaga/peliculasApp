@@ -1,1 +1,15 @@
-<p>tarjetas works!</p>
+<div  class="card-columns m-5 animated fadeIn">
+
+    <div  *ngFor="let item of items" class="card puntero">
+      <!-- <img [src]="`http://image.tmdb.org/t/p/w500/${ item.poster_path }`" class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title colorb">{{ item.original_title }}</h5>
+        <p class="card-text">
+          <span>
+            {{ item.overview }}
+          </span>
+        </p>
+      </div>
+    </div>
+  
+  </div>
